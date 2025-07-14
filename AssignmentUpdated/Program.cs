@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using AssignmentUpdated.Q5;
+using System.Drawing;
 using System.Runtime.Intrinsics.Arm;
 
 namespace AssignmentUpdated
@@ -46,6 +47,15 @@ namespace AssignmentUpdated
             // b) Create a derived class named Manager that overrides the Work method to print "Manager is managing".  
             //Manager manager = new Manager();
             //manager.ThatWork();
+            #endregion
+            #region Question 5)
+            //BaseClass B = new BaseClass();
+            //B.DisplayMessage();
+            //DerivedClass1 derivedClass1 = new DerivedClass1();
+            //derivedClass1.DisplayMessage();
+            //DerivedClass2 derivedClass2 = new DerivedClass2();
+            //derivedClass2.DisplayMessage();
+
             #endregion
         }
     }
