@@ -94,6 +94,18 @@ namespace Demo
             //string str = c;
             //Console.WriteLine(str);
             #endregion
+            #region Cating Operator Ex2
+            //User user = new User()
+            //{
+            //    Id = 2202110,
+            //    FullName = "Abdallah Sayed",
+            //    Email = "abdallahsay10@gmail.com",
+            //    Password = "p@sswOrd",
+            //    SecurityStamp = Guid.NewGuid(),
+            //};
+            //UserViewModel userViewModel = (UserViewModel) user;
+            //Console.WriteLine(userViewModel);
+            #endregion
 
 
         }
