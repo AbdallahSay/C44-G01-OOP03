@@ -39,6 +39,14 @@ namespace AssignmentUpdated
             //Console.WriteLine($"After - {c1 - c2}");
 
             #endregion
+            #region Question 4) 
+            //a) Create a base class named Employee with method That Work as it prints   "Employee is  working".  
+            //Employee employee = new Employee();
+            //employee.ThatWork();
+            // b) Create a derived class named Manager that overrides the Work method to print "Manager is managing".  
+            //Manager manager = new Manager();
+            //manager.ThatWork();
+            #endregion
         }
     }
 }
