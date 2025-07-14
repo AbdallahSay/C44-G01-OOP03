@@ -102,6 +102,13 @@ namespace AssignmentUpdated
 
 
             #endregion
+            #region Part02 Q5
+            /*Inheritance makes object-oriented design simpler and cleaner.
+            Instead of repeating common properties like Title, Author, and ISBN in every book type
+            , we define them once in a base class called Book. Then,
+            specialized types like EBook and PrintedBook inherit those properties 
+            and add their own unique ones — such as FileSize or PageCount.*/
+            #endregion
         }
     }
 }
