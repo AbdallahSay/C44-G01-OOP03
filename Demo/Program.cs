@@ -1,4 +1,5 @@
-﻿using Demo.Overloading;
+﻿using Demo.Binding;
+using Demo.Overloading;
 using Demo.Override;
 using System.Runtime.Intrinsics.Arm;
 namespace Demo
@@ -30,7 +31,24 @@ namespace Demo
 
 
         #endregion
-
+        #region Binding EX2
+        //public static void ProcessOfEmployee(Full_Time employee)
+        //{
+        //    employee.GetEmployeeType();
+        //    employee.GetEmployeeData();
+        //}
+        //public static void ProcessOfEmployee(Part_Time employee)
+        //{
+        //    employee.GetEmployeeType();
+        //    employee.GetEmployeeData();
+          
+        //}
+        //public static void ProcessOfEmployee(Employee employee)
+        //{
+        //    employee.GetEmployeeType(); // static binding [Method Hiding] --new  --compile-type --call method based on reference type
+        //    employee.GetEmployeeData(); //Dynamic Binding [Method Override] -- virtual --run-time -- call method based on object type
+        //}
+        #endregion
         static void Main(string[] args)
         {
             #region Method Overloading
@@ -123,14 +141,22 @@ namespace Demo
 
             #endregion
             #region Binding EX1
-            TypeA typeA = new TypeB(10 ,20);
-            //Take Referance from parent refer to an object from Child 
-            typeA.A = 20;
-            //typeA.B = 30;//Invalid
-            typeA.Myfun2();//Using keyword Override -- Object type , Late Binding -- CLR
-            typeA.Myfun1();// Using keyword new -- reference type -- early Binding - Rolson -- Hide method | Masking
-            //TypeB typeB = new TypeA(10);//Invalid
-            //try to take reference from Child refer to an object from parent   
+            //TypeA typeA = new TypeB(10 ,20);
+            ////Take Referance from parent refer to an object from Child 
+            //typeA.A = 20;
+            ////typeA.B = 30;//Invalid
+            //typeA.Myfun2();//Using keyword Override -- Object type , Late Binding -- CLR
+            //typeA.Myfun1();// Using keyword new -- reference type -- early Binding - Rolson -- Hide method | Masking
+                           //TypeB typeB = new TypeA(10);//Invalid
+                           //try to take reference from Child refer to an object from parent   
+            #endregion
+            #region Binding EX2
+            //Full_Time fullTime = new Full_Time(1000.5m, 20, 21, "Abdallah Sayed", "abdallahSay@gmail.com");
+            ////fullTime.GetEmployeeType();
+            ////fullTime.GetEmployeeData();
+            //ProcessOfEmployee(fullTime);
+            //Part_Time part_Time = new Part_Time(500, 8, 12, 21, "Abdol", "lukaSay10@gmail.com");
+            //ProcessOfEmployee(part_Time);
             #endregion
 
 
