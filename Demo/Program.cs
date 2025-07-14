@@ -87,6 +87,13 @@ namespace Demo
             //else 
             //    Console.WriteLine("C1 = C2");
             #endregion
+            #region Cating Operator Ex1
+            //Complex c = new Complex() { Real = 6, Img = 9 };
+            //int x = (int)c;
+            //Console.WriteLine(x);
+            //string str = c;
+            //Console.WriteLine(str);
+            #endregion
 
 
         }

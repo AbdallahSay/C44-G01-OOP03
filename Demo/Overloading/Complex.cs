@@ -89,6 +89,16 @@ namespace Demo.Overloading
             }
         }
         #endregion
+        #region Casting operator
+        public static explicit operator int(Complex c)
+        {
+            return c?.Real??0;
+        }
+        public static implicit operator string(Complex c)
+        {
+            return $"Real = {c.Real} , Img = {c.Img}i";
+        }
+        #endregion
 
     }
 }
