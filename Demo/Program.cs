@@ -120,7 +120,17 @@ namespace Demo
             //typeB.Myfun1();
             //typeB.Myfun2();
 
-           
+
+            #endregion
+            #region Binding EX1
+            TypeA typeA = new TypeB(10 ,20);
+            //Take Referance from parent refer to an object from Child 
+            typeA.A = 20;
+            //typeA.B = 30;//Invalid
+            typeA.Myfun2();//Using keyword Override -- Object type , Late Binding -- CLR
+            typeA.Myfun1();// Using keyword new -- reference type -- early Binding - Rolson -- Hide method | Masking
+            //TypeB typeB = new TypeA(10);//Invalid
+            //try to take reference from Child refer to an object from parent   
             #endregion
 
 
