@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using System.Runtime.Intrinsics.Arm;
 
 namespace AssignmentUpdated
 {
@@ -25,6 +26,18 @@ namespace AssignmentUpdated
             //Console.WriteLine(r2);
             //Rectangle r3 = new Rectangle(100);
             //Console.WriteLine(r3);
+            #endregion
+            #region  Q3) Define a class Complex Number that represents a complex number with real and imaginary parts.
+            //+
+            //Complex c1 =new Complex() { Real = 10 , Img = 8};
+            //Complex c2 =new Complex() { Real = 12 , Img = 6};
+            //Console.WriteLine($"c1 Before + | -");
+            //Console.WriteLine(c1);
+            //Console.WriteLine($"C2 Before + | -");
+            //Console.WriteLine(c2);
+            //Console.WriteLine($"After + {c1 + c2}");
+            //Console.WriteLine($"After - {c1 - c2}");
+
             #endregion
         }
     }
