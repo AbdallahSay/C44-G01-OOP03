@@ -1,4 +1,5 @@
 ﻿using AssignmentUpdated.Q5;
+using AssignmentUpdated.Q5.Part02;
 using System.Drawing;
 using System.Runtime.Intrinsics.Arm;
 
@@ -56,6 +57,20 @@ namespace AssignmentUpdated
             //DerivedClass2 derivedClass2 = new DerivedClass2();
             //derivedClass2.DisplayMessage();
 
+            #endregion
+            #region part02  1--3
+            //1
+            //Duration D1 = new Duration(1 , 10 ,15);
+            //Console.WriteLine(D1.ToString());
+            //2
+            //Duration D1 = new Duration(3600);
+            //Console.WriteLine(D1.ToString());
+            //3
+            //Duration D2 = new Duration(7800);
+            //Console.WriteLine(D2.ToString());
+            //4
+            //Duration D3 = new Duration(666);
+            //Console.WriteLine(D3.ToString());
             #endregion
         }
     }
