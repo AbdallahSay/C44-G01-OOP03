@@ -1,4 +1,5 @@
 ﻿using Demo.Overloading;
+using Demo.Override;
 using System.Runtime.Intrinsics.Arm;
 namespace Demo
 {
@@ -105,6 +106,21 @@ namespace Demo
             //};
             //UserViewModel userViewModel = (UserViewModel) user;
             //Console.WriteLine(userViewModel);
+            #endregion
+            #region Override
+            //TypeA typeA = new TypeA(9);
+            //typeA.A = 10; //Override 
+            //Console.WriteLine(typeA);
+            //typeA.Myfun1();
+            //typeA.Myfun2();
+            //TypeB typeB = new TypeB(10 , 20);
+            //typeB.A = 20;
+            //typeB.B = 30;
+            //Console.WriteLine(typeB);
+            //typeB.Myfun1();
+            //typeB.Myfun2();
+
+           
             #endregion
 
 
