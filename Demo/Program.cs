@@ -59,6 +59,24 @@ namespace Demo
             //c3 += c1;
             //Console.WriteLine(c3);
             #endregion
+            #region Overloading Operators [Unary Operator]
+            // prefix ++x , postfix x++
+            //Complex c1 = new Complex() { Real = 4 , Img = 10};
+            //Console.WriteLine(c1);
+            //c1++;
+            //Console.WriteLine(" After ++");
+            //Console.WriteLine(c1);
+            //--c1;
+            //Console.WriteLine("After --");
+            //Console.WriteLine(c1);
+            //Console.Write("c++ = ");
+            //c1++;
+            //Console.WriteLine(c1);
+            //Console.Write("C-- =");
+            //c1--;
+            //Console.WriteLine(c1);
+
+            #endregion
 
 
         }

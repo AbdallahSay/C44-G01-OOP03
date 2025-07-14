@@ -41,6 +41,26 @@ namespace Demo.Overloading
         }
 
         #endregion
+        #region Overloading Unary Operator
+        public static Complex operator ++(Complex c)
+        {
+            return new Complex()
+            {
+                //Real = c?.Real + 1?? 1 ,
+                Real = (c?.Real??0) + 1,
+                Img = c?.Img??0
+            };
+
+        }
+        public static Complex operator --(Complex c)
+        {
+            return new Complex()
+            {
+                Real = (c?.Real??0) - 1,
+                Img = c.Img
+            };
+        }
+        #endregion
 
     }
 }
