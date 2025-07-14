@@ -72,6 +72,36 @@ namespace AssignmentUpdated
             //Duration D3 = new Duration(666);
             //Console.WriteLine(D3.ToString());
             #endregion
+            #region Part02 Q4)
+            Duration D1 = new Duration() { Hour = 100, Minutes = 30, Seconds = 40 };
+            Duration D2 = new Duration() { Hour = 100, Minutes = 30, Seconds = 40 };
+            //Console.WriteLine(D1 + D2);
+            //Console.WriteLine(D1 + 7800);
+            Duration D3 = new Duration();
+            //D3 += 666;
+            //Console.WriteLine(D3.ToString());
+            //D3 = ++D1;
+            //Console.WriteLine(D3);
+            //D3 = --D1;
+            //Console.WriteLine(D3);
+            //D3 = D1 - D2;
+            //Console.WriteLine(D3);
+            //if (D1 > D2)
+            //    Console.WriteLine("D1 > D2");
+            //else if (D1 < D2)
+            //    Console.WriteLine("D1 < D2");
+            //else
+            //    Console.WriteLine("D1 = D2");
+            //if(D1 is not null)
+            //    Console.WriteLine("Welcom");
+            //DateTime Obj = (DateTime)D1;
+            //Console.WriteLine(Obj);
+
+
+
+
+
+            #endregion
         }
     }
 }

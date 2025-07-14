@@ -16,17 +16,7 @@ namespace AssignmentUpdated.Q5.Part02
         #region 2
         public override string ToString()
         {
-            string result = "";
-
-            if (Hour > 0)
-                result += $"Hours: {Hour}, ";
-
-            if (Minutes > 0 || Hour > 0 || Seconds > 0)
-                result += $"Minutes: {Minutes}, ";
-
-            result += $"Seconds: {Seconds}";
-
-            return result;
+            return $"Hour = {Hour}  , Minutes  = {Minutes}  , Seconds = {Seconds}";
         }
 
         public override bool Equals(object obj)
@@ -59,8 +49,92 @@ namespace AssignmentUpdated.Q5.Part02
             Minutes = minutes;
             Seconds = seconds;
         }
-       
 
+        #region 4 ) Overload
+        public Duration() { }
+        public static Duration operator +(Duration d1 , Duration d2)
+        {
+            return new Duration() 
+            {
+                Hour = (d1?.Hour??0) + (d2?.Hour??0),
+                Minutes = (d1?.Minutes ?? 0) + (d2?.Minutes ?? 0),
+                Seconds = (d1?.Seconds ?? 0) + (d2?.Seconds ?? 0)
+            };
+
+        }
+        public static Duration operator +(Duration d1 , int Second)
+        {
+            return new Duration()
+            {
+                Hour = (d1?.Hour ?? 0) + Second / 3600,
+                Minutes = (d1?.Minutes ?? 0) +(Second %3600) /60,
+                Seconds = ((d1?.Seconds ?? 0) + Second) % 60
+            };
+
+        }
+        public static Duration operator ++(Duration d)
+        {
+            return new Duration()
+            {
+                Hour = d?.Hour ?? 0,
+                Minutes = (d?.Minutes ?? 0) + 1,
+                Seconds = (d?.Seconds ?? 0)
+            };
+        }
+        public static Duration operator --(Duration d)
+        {
+            return new Duration() 
+            { 
+                Hour = d?.Hour??0,
+                Minutes = (d?.Minutes??0) - 1,
+                Seconds = (d?.Seconds??0)
+            };
+
+
+        }
+        public static Duration operator -(Duration d1, Duration d2)
+        {
+            return new Duration()
+            {
+                Hour = (d1?.Hour ?? 0) - (d2?.Hour ?? 0),
+                Minutes = (d1?.Minutes ?? 0) - (d2?.Minutes ?? 0),
+                Seconds = (d1?.Seconds ?? 0) - (d2?.Seconds ?? 0)
+            };
+
+        }
+
+        public static bool operator >(Duration left , Duration right)
+        {
+            if (left.Hour == right.Hour)
+            {
+                return left.Minutes > right.Minutes;
+            }
+            else 
+                return left.Seconds > right.Seconds;
+
+
+        }
+        public static bool operator <(Duration left , Duration right)
+        {
+            if (left.Hour == right.Hour)
+            {
+                return left.Minutes < right.Minutes;
+            }
+            else 
+                return left.Seconds < right.Seconds;
+
+
+        }
+        public static implicit operator bool(Duration d)
+        {
+            return d.Hour > 0 || d.Minutes > 0 || d.Seconds > 0;
+        }
+        public static explicit operator DateTime(Duration d)
+        {
+            return new DateTime(d.Hour, d.Minutes, d.Seconds);
+        }
+
+        #endregion
 
 
 
