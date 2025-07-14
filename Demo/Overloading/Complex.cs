@@ -1,4 +1,5 @@
 ﻿
+using System.Diagnostics;
 using System.Numerics;
 using System.Security.Cryptography;
 
@@ -59,6 +60,33 @@ namespace Demo.Overloading
                 Real = (c?.Real??0) - 1,
                 Img = c.Img
             };
+        }
+        #endregion
+        #region Overloading Relational operator
+        // > < >= <=
+        public static bool operator >(Complex Left , Complex Right)
+        {
+            if (Left.Real == Right.Real)
+            {
+                return Left.Img > Right.Img;
+            }
+            else
+                return Left.Real > Right.Real;
+        }
+        public static bool operator <(Complex Left, Complex Right)
+        {
+            if (Left is null && Right is null)
+            {
+                return false;
+            }
+            else { 
+            if (Left.Real == Right.Real)
+            {
+                return Left.Img < Right.Img;
+            }
+            else
+                return Left.Real < Right.Real;
+            }
         }
         #endregion
 

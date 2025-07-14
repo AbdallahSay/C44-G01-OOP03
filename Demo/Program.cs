@@ -77,6 +77,16 @@ namespace Demo
             //Console.WriteLine(c1);
 
             #endregion
+            #region Overloading Operators [Relational operators]
+            //Complex c1 = new Complex { Real = 10, Img = 6 };
+            //Complex c2 = new Complex { Real = 10, Img = 6 };
+            //if (c1 > c2)
+            //    Console.WriteLine("C1 > C2");
+            //else if (c1 < c2)
+            //    Console.WriteLine("C1 < C2");
+            //else 
+            //    Console.WriteLine("C1 = C2");
+            #endregion
 
 
         }
